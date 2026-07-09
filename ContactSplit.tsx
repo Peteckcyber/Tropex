@@ -52,12 +52,12 @@ const contactRows = ({
 ];
 
 export default function ContactSplit({
-  title = 'Tropex Metal Products Co., Ltd. Headquarter',
+  title = 'Tropex Metal Products Co, Ltd. Headquarter',
   phone = '+852 5686 4074',
   fax = '+852 5686 4074',
   email = 'info@tropexltdchina.com',
   imageSrc = '/assets/images/contact/contact-office.png',
-  imageAlt = 'Tropex Metal Products Co., Ltd. office interior',
+  imageAlt = 'Tropex Metal Products Co, Ltd. office interior',
 }: ContactSplitProps) {
   const rows = contactRows({ phone, fax, email });
 
