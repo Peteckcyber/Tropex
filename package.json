@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx -y html-validate \"*.html\"",
+    "audit:links": "python audit_links.py",
+    "audit": "npm test && npm run audit:links"
   },
   "repository": {
     "type": "git",

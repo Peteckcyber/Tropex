@@ -1,3 +1,4 @@
+import React from 'react';
 import { Mail, MapPin, Phone, Printer } from 'lucide-react';
 
 type ContactSplitProps = {
@@ -42,23 +43,21 @@ const contactRows = ({
     icon: MapPin,
     value: (
       <>
-        <span>No. 1168, Huanghe 40 Road,</span>
-        <br />
-        <span>Bincheng District,</span>
-        <br />
-        <span>Binzhou City</span>
+        <div className="block">No. 1168, Huanghe 40 Road,</div>
+        <div className="block">Bincheng District,</div>
+        <div className="block">Binzhou City</div>
       </>
     ),
   },
 ];
 
 export default function ContactSplit({
-  title = 'Tropex Metal Products Co, Ltd. Headquarter',
+  title = 'Tropex Metal Products Co., Ltd. Headquarter',
   phone = '+852 5686 4074',
   fax = '+852 5686 4074',
   email = 'info@tropexltdchina.com',
   imageSrc = '/assets/images/contact/contact-office.png',
-  imageAlt = 'Tropex Metal Products Co, Ltd. office interior',
+  imageAlt = 'Tropex Metal Products Co., Ltd. office interior',
 }: ContactSplitProps) {
   const rows = contactRows({ phone, fax, email });
 
@@ -84,15 +83,7 @@ export default function ContactSplit({
                     {label}
                   </span>
                   <div className="flex-1 font-medium text-white/90">
-                    {key === 'address' ? (
-                      <>
-                        <div className="block">No. 1168, Huanghe 40 Road,</div>
-                        <div className="block">Bincheng District,</div>
-                        <div className="block">Binzhou City</div>
-                      </>
-                    ) : (
-                      value
-                    )}
+                    {value}
                   </div>
                 </div>
               </div>
