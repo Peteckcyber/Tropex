@@ -685,7 +685,7 @@ iframe{border:0;width:100%}
 .project-card p,
 .footer-brand p{
   margin:0;
-  color:#4b5d71;
+  /* color:#4b5d71; */
 }
 .section-divider{
   width:108px;
