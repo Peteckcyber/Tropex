@@ -1597,6 +1597,17 @@ iframe{border:0;width:100%}
 }
 
 @media (max-width:1024px){
+  .header-row{
+    position:relative;
+    justify-content:center;
+  }
+  .brand{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1;
+  }
   .site-nav{
     position:fixed;
     inset:84px 16px auto 16px;
@@ -1611,7 +1622,12 @@ iframe{border:0;width:100%}
     gap:12px;
   }
   .site-nav.is-open{display:flex}
-  .menu-toggle{display:flex}
+  .menu-toggle{
+    display:flex;
+    position:relative;
+    z-index:2;
+    margin:0;
+  }
   .site-nav>a,.nav-parent{padding:10px 0}
   .nav-dropdown{display:flex;flex-direction:column}
   .nav-dropdown-head{justify-content:space-between}
