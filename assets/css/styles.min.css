@@ -863,6 +863,7 @@ iframe{border:0;width:100%}
 .menu-toggle{
   display:none;
   flex-direction:column;
+  justify-content:center;
   gap:5px;
   width:48px;
   height:48px;
@@ -1598,15 +1599,12 @@ iframe{border:0;width:100%}
 
 @media (max-width:1024px){
   .header-row{
-    position:relative;
-    justify-content:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
   }
   .brand{
-    position:absolute;
-    left:0;
-    top:50%;
-    transform:translateY(-50%);
-    z-index:1;
+    align-self:center;
   }
   .site-nav{
     position:fixed;
@@ -1624,8 +1622,7 @@ iframe{border:0;width:100%}
   .site-nav.is-open{display:flex}
   .menu-toggle{
     display:flex;
-    position:relative;
-    z-index:2;
+    align-self:center;
     margin:0;
   }
   .site-nav>a,.nav-parent{padding:10px 0}
